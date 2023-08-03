@@ -18,6 +18,13 @@
 
 /* SEÇÃO SUPERIOR */
 
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+}
 
 
 /* VIDEO */
@@ -30,6 +37,12 @@
 
 /* RODAPÉ */
 
+.rodape__container {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+}
 
 
 @media screen and (min-width: 834px) {
@@ -41,9 +54,12 @@
 
     /* MENU LATERAL ADICIONADO NA ATIVIDADE EXTRA */
 
-  
+
 
     /* RODAPÉ */
+    .rodape__container {
+        justify-content: space-between;
+    }
 
 }
 
@@ -51,6 +67,6 @@
 
     /* MENU */
 
-   
+
 
 }
